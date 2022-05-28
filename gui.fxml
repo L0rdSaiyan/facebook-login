@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control">
+   <children>
+      <Label layoutX="32.0" layoutY="88.0" prefHeight="39.0" prefWidth="279.0" text="O Facebook ajuda você a se conectar e">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="121.0" prefHeight="39.0" prefWidth="189.0" text="fazem parte da sua vida.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="105.0" prefHeight="39.0" prefWidth="248.0" text="compartilhar com as pessoas que">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" layoutX="347.0" layoutY="72.0" prefHeight="52.0" prefWidth="237.0" promptText="Email ou telefone">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="347.0" layoutY="140.0" prefHeight="52.0" prefWidth="237.0" promptText="Senha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button id="login" fx:id="btnlogin" layoutX="347.0" layoutY="209.0" mnemonicParsing="false" onAction="#login" prefHeight="52.0" prefWidth="237.0" stylesheets="@style.css" text="Entrar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="347.0" layoutY="273.0" prefHeight="17.0" prefWidth="237.0" text="-------------------------------------------------" />
+      <Label fx:id="recover" layoutX="399.0" layoutY="290.0" onMouseClicked="#recoverpass" text="Esqueceu a senha?" textFill="#00aaff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button id="create" fx:id="btncreate" layoutX="347.0" layoutY="325.0" mnemonicParsing="false" onAction="#createacc" prefHeight="52.0" prefWidth="237.0" stylesheets="@style.css" text="Criar nova conta" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@facebook-logo-2-2.png" />
+         </image>
+      </ImageView>
+      <Label id="label1" fx:id="createpage" layoutX="32.0" layoutY="310.0" onMouseClicked="#createapage" prefHeight="30.0" prefWidth="116.0" stylesheets="@style.css" text="Criar uma página">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="149.0" layoutY="310.0" prefHeight="30.0" prefWidth="144.0" text="para uma celebridade,">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="328.0" prefHeight="30.0" prefWidth="189.0" text="uma marca ou uma empresa.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
